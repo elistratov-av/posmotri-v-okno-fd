@@ -126,9 +126,13 @@ button:focus-visible {
 
 .search-form__textfield {
   width: 225px;
-  border-style: solid none;
+  border-top: 1px solid white;
+  border-right: none;
+  border-bottom: 1px solid white;
+  border-left: none;
+  padding: 2.5px 2px;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -176,10 +180,11 @@ button:focus-visible {
 
 .button {
   border: 1px solid #fff;
-  padding: 6px;
+  padding: 8px;
   color: #fff;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 18px;
+  font-size: inherit;
   line-height: 1;
   text-align: center;
   background-color: transparent;
@@ -224,7 +229,7 @@ button:focus-visible {
   gap: 30px;
   height: 298px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list {
@@ -267,6 +272,7 @@ button:focus-visible {
 }
 
 .content__video-card-title {
+  margin-bottom: 6px;
   overflow: hidden;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -280,8 +286,7 @@ button:focus-visible {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  line-height: 1;
-  letter-spacing: 0;
+  line-height: 0.9;
   line-clamp: 4;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
